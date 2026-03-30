@@ -1241,7 +1241,7 @@ body.openSocialLinks::before {
   display: block;
   width: 104px;
   height: 37px;
-  background: url(../images/imgs/main-logo.png) no-repeat left top;
+  background: url(../imgs/main-logo.png) no-repeat left top;
   text-indent: -999999px;
   background-size: 100%;
 }
