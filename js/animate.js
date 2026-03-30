@@ -1,0 +1,1 @@
+jQuery(document).ready((function(){var e=jQuery(".animate"),a=jQuery(window);window.matchMedia("only screen and (max-width: 320px)").matches&&e.removeClass("animate"),a.on("scroll resize",(function(){var r=a.height(),i=a.scrollTop(),n=i+r;$.each(e,(function(){var e=jQuery(this),a=e.outerHeight(),r=e.offset().top-0;r+a>=i&&r<=n&&e.addClass("in-view")}))})),a.trigger("scroll")}));
