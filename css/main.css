@@ -869,7 +869,7 @@ ul {
   padding: 0px;
 }
 ul li {
-  background-image: url(../images/bullet-1.png);
+  background-image: url(../bullet-1.png);
   background-position: 3px 10px; /*R T*/
   background-repeat: no-repeat;
   margin: 0px;
@@ -890,7 +890,7 @@ ul li {
   display: flow-root;
 }
 .EditorText ul li {
-  background-image: url(../images/bullet-1.png);
+  background-image: url(../bullet-1.png);
   background-repeat: no-repeat;
   margin: 0px;
   padding: 0px 0px 0px 20px; /*T R B L*/
@@ -1246,7 +1246,7 @@ body.openSocialLinks::before {
   background-size: 100%;
 }
 .header-wrapper .container .primary-nav {
-  width: 100%;
+  min-width: 65%;
 }
 .header-wrapper .container .primary-nav .phone, .header-wrapper .container .primary-nav .phone a {
   color: #ffffff;
@@ -1262,13 +1262,16 @@ body.openSocialLinks::before {
   color: #0072bc;
 }
 .header-wrapper .primary-nav.d-flex {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .header-wrapper .navigation {
   display: -webkit-box;
@@ -1278,7 +1281,6 @@ body.openSocialLinks::before {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 30px;
-  min-width: 70%;
 }
 .header-wrapper .navigation ul {
   list-style-type: none;
@@ -2378,6 +2380,49 @@ a.menu-link .hamburger.active .bottom {
 .Category-wrapper .container .swiper-button-next {
   right: 0;
 }
+.Category-wrapper .container .swiper-slide {
+  background-color: #fffefd;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  height: 100%;
+}
+.Category-wrapper .container .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  height: 100%;
+}
+.Category-wrapper .container .col .ImgWrap img {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.Category-wrapper .container .col .title {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #545454;
+  font-weight: 500;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.Category-wrapper .container .col:hover .ImgWrap img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.Category-wrapper .container .col:hover .title {
+  color: #0072bc;
+}
 
 .Featured-products-wrapper {
   overflow: hidden;
@@ -2433,6 +2478,122 @@ a.menu-link .hamburger.active .bottom {
 }
 .Featured-products-wrapper .container .top + .JcarouselSlider {
   margin-top: 40px;
+}
+.Featured-products-wrapper .container .swiper-slide {
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  height: 100%;
+  background-color: #fffefd;
+  overflow: hidden;
+}
+.Featured-products-wrapper .container .col {
+  position: relative;
+  padding: 40px 15px 60px;
+}
+.Featured-products-wrapper .container .col .ImgWrap img {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.Featured-products-wrapper .container .col .discount-lable {
+  font-size: 15px;
+  line-height: 1.2;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #ff0d13;
+  border-radius: 5px;
+  padding: 5px 10px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.Featured-products-wrapper .container .col .text {
+  margin-top: 25px;
+}
+.Featured-products-wrapper .container .col .text .P_title {
+  font-size: 13px;
+  line-height: 1.2;
+  color: #545454;
+  margin-bottom: 5px;
+}
+.Featured-products-wrapper .container .col .text .P_sub-text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.Featured-products-wrapper .container .col .text .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.Featured-products-wrapper .container .col .text .price .new-price {
+  font-size: 17px;
+  line-height: 1.2;
+  color: #000000;
+  font-weight: 700;
+}
+.Featured-products-wrapper .container .col .text .price .old-price {
+  font-size: 13px;
+  line-height: 1.2;
+  color: #545454;
+}
+.Featured-products-wrapper .container .col .text .rating {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Featured-products-wrapper .container .col .shop-btn {
+  background-color: #0072bc;
+  width: 100%;
+  padding: 10px;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.Featured-products-wrapper .container .col .shop-btn .icon {
+  line-height: 0;
+}
+.Featured-products-wrapper .container .col .shop-btn .icon svg {
+  width: 20px;
+  height: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.Featured-products-wrapper .container .col:hover .ImgWrap img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.Featured-products-wrapper .container .col:hover .shop-btn {
+  background-color: #025e99;
+}
+.Featured-products-wrapper .container .col:hover .shop-btn svg {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .Featured-products-wrapper .container .swiper-container {
   overflow: hidden;
