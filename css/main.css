@@ -869,7 +869,7 @@ ul {
   padding: 0px;
 }
 ul li {
-  background-image: url(../images/bullet-1.png);
+  background-image: url(../bullet-1.png);
   background-position: 3px 10px; /*R T*/
   background-repeat: no-repeat;
   margin: 0px;
@@ -890,7 +890,7 @@ ul li {
   display: flow-root;
 }
 .EditorText ul li {
-  background-image: url(../images/bullet-1.png);
+  background-image: url(../bullet-1.png);
   background-repeat: no-repeat;
   margin: 0px;
   padding: 0px 0px 0px 20px; /*T R B L*/
@@ -1241,7 +1241,7 @@ body.openSocialLinks::before {
   display: block;
   width: 104px;
   height: 37px;
-  background: url(../images/imgs/main-logo.png) no-repeat left top;
+  background: url(../imgs/main-logo.png) no-repeat left top;
   text-indent: -999999px;
   background-size: 100%;
 }
@@ -2107,14 +2107,14 @@ a.menu-link .hamburger.active .bottom {
 .swiper-button-prev2,
 .swiper-button-prev1,
 .swiper-button-prev {
-  background: url(../images/icons/chevron.svg) no-repeat center;
+  background: url(../icons/chevron.svg) no-repeat center;
 }
 
 .swiper-button-next3,
 .swiper-button-next2,
 .swiper-button-next1,
 .swiper-button-next {
-  background: url(../images/icons/chevron.svg) no-repeat center;
+  background: url(../icons/chevron.svg) no-repeat center;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
