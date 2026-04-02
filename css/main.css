@@ -2146,14 +2146,14 @@ a.menu-link .hamburger.active .bottom {
 .swiper-button-prev2,
 .swiper-button-prev1,
 .swiper-button-prev {
-  background: url(../icons/chevron.svg) no-repeat center;
+  background: url(icons/chevron.svg) no-repeat center;
 }
 
 .swiper-button-next3,
 .swiper-button-next2,
 .swiper-button-next1,
 .swiper-button-next {
-  background: url(../icons/chevron.svg) no-repeat center;
+  background: url(icons/chevron.svg) no-repeat center;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
