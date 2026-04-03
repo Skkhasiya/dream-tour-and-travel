@@ -741,6 +741,141 @@
         </div>
     </section>
 
+    <section class="Offers-wrapper">
+        <div class="container">
+            <div class="section-title">Top Offers This Week</div>
+            <div class="row g-0">
+                <div class="left W_col animate fadeInLeft">
+                    <div class="col">
+                        <a href="javascript:void(0)">
+                            <div class="d-flex">
+                                <div class="ImgWrap">
+                                    <img src="imgs/offers-img1.png" alt="offers-img" width="210" height="209">
+                                </div>
+                                <div class="text">
+                                    <div class="discount">-20%</div>
+                                    <div class="title">Wireless Speaker</div>
+                                    <div class="link-btn">
+                                        Shop Now 
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 48 48">
+                                                <g fill="none"  stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                                                    <path d="M41.9999 24H5.99994" />
+                                                    <path d="M30 12L42 24L30 36" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="javascript:void(0)">
+                            <div class="d-flex">
+                                <div class="ImgWrap">
+                                    <img src="imgs/offers-img2.png" alt="offers-img" width="248" height="168">
+                                </div>
+                                <div class="text">
+                                    <div class="title">30% OFF <br/>on this week</div>
+                                    <div class="link-btn">
+                                        Shop Now
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 48 48">
+                                                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                                                    <path d="M41.9999 24H5.99994" />
+                                                    <path d="M30 12L42 24L30 36" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="big-col W_col animate fadeInUp">
+                    <div class="top-text">Hurry to take advantage of the offer !</div>
+                    <div class="countdown">
+                        <div class="time_box">
+                            <div class="number" id="days">00</div>
+                            <div class="label">Days</div>
+                        </div>
+                        <div class="time_box">
+                            <div class="number" id="hours">00</div>
+                            <div class="label">Hours</div>
+                        </div>
+                        <div class="time_box">
+                            <div class="number" id="minutes">00</div>
+                            <div class="label">Mins</div>
+                        </div>
+                        <div class="time_box">
+                            <div class="number" id="seconds">00</div>
+                            <div class="label">Secs</div>
+                        </div>
+                    </div>
+                    <div class="ImgWrap">
+                        <img src="imgs/offers-img3.png" alt="offers-img" width="404" height="376">
+                    </div>
+                    <div class="text">
+                        <div class="title">70% OFF on Smart Speakers</div>
+                        <button class="btn btn-primary ButtonOnlcick" type="button" data-href="javascript:void(0)" data-target="_self">Shop Now</button>
+                    </div>
+                </div>
+                <div class="right W_col animate fadeInRight">
+                    <div class="col">
+                        <a href="javascript:void(0)">
+                            <div class="d-flex">
+                                <div class="ImgWrap">
+                                    <img src="imgs/offers-img4.png" alt="offers-img" width="172" height="220">
+                                </div>
+                                <div class="text">
+                                    <div class="discount">-30%</div>
+                                    <div class="title">Best Sellers <br/>Smartphone</div>
+                                    <div class="link-btn">
+                                        Shop Now
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 48 48">
+                                                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                                                    <path d="M41.9999 24H5.99994" />
+                                                    <path d="M30 12L42 24L30 36" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="javascript:void(0)">
+                            <div class="d-flex">
+                                <div class="ImgWrap">
+                                    <img src="imgs/offers-img5.png" alt="offers-img" width="256" height="286">
+                                </div>
+                                <div class="text">
+                                    <div class="discount">-60%</div>
+                                    <div class="title">Fashion Edge <br/>GT5 Pro</div>
+                                    <div class="link-btn">
+                                        Shop Now
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 48 48">
+                                                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                                                    <path d="M41.9999 24H5.99994" />
+                                                    <path d="M30 12L42 24L30 36" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer-wrapper">
         <div class="container">
             <div class="row gap-5 g-0 justify-content-between animate fadeInUp">
@@ -1313,7 +1448,29 @@ var swiper = new Swiper(".Featured-products-slider", {
     },        
 }); 
 </script>
+<script>
+    // Set your target date here
+    const targetDate = new Date("Apr 10, 2026 00:00:00").getTime();
 
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const gap = targetDate - now;
+
+        if (gap <= 0) return;
+
+        const d = Math.floor(gap / (1000 * 60 * 60 * 24));
+        const h = Math.floor((gap / (1000 * 60 * 60)) % 24);
+        const m = Math.floor((gap / (1000 * 60)) % 60);
+        const s = Math.floor((gap / 1000) % 60);
+
+        document.getElementById("days").innerHTML = String(d).padStart(2, '0');
+        document.getElementById("hours").innerHTML = String(h).padStart(2, '0');
+        document.getElementById("minutes").innerHTML = String(m).padStart(2, '0');
+        document.getElementById("seconds").innerHTML = String(s).padStart(2, '0');
+    }
+
+    setInterval(updateCountdown, 1000);
+</script>
 </body>
 
 </html>
