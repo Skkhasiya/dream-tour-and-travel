@@ -1241,7 +1241,7 @@ body.openSocialLinks::before {
   display: block;
   width: 104px;
   height: 37px;
-  background: url(imgs/main-logo.png) no-repeat left top;
+  background: url(../imgs/main-logo.png) no-repeat left top;
   text-indent: -999999px;
   background-size: 100%;
 }
@@ -2146,14 +2146,14 @@ a.menu-link .hamburger.active .bottom {
 .swiper-button-prev2,
 .swiper-button-prev1,
 .swiper-button-prev {
-  background: url(icons/chevron.svg) no-repeat center;
+  background: url(../icons/chevron.svg) no-repeat center;
 }
 
 .swiper-button-next3,
 .swiper-button-next2,
 .swiper-button-next1,
 .swiper-button-next {
-  background: url(icons/chevron.svg) no-repeat center;
+  background: url(../icons/chevron.svg) no-repeat center;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -4438,7 +4438,7 @@ div.error {
   }
   .Selling-products-wrapper .container .row .left {
     max-width: 100%;
-    background-image: url(imgs/selling-product-img.jpg);
+    background-image: url(../imgs/selling-product-img.jpg);
     background-size: cover;
     min-height: 100%;
     background-position: bottom;
